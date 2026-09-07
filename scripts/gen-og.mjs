@@ -53,16 +53,18 @@ const headSvg = headLines
 const FONT = "Malgun Gothic, 'Apple SD Gothic Neo', sans-serif";
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eaf1ff"/>
+    <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d6f3ef"/>
   </linearGradient></defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect x="0" y="0" width="1200" height="12" fill="#2f6feb"/>
-  <rect x="90" y="86" width="72" height="72" rx="18" fill="#2f6feb"/>
-  <path d="M111 122 L124 135 L146 108" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="0" y="0" width="1200" height="12" fill="#0f766e"/>
+  <circle cx="126" cy="122" r="36" fill="#0f766e"/>
+  <circle cx="126" cy="116.6" r="13.7" fill="#ffffff"/>
+  <rect x="119" y="131.9" width="14" height="3.8" rx="1.9" fill="#ffffff"/>
+  <rect x="120.8" y="137.5" width="10.4" height="3.8" rx="1.9" fill="#ffffff"/>
   <text x="178" y="140" font-family="${FONT}" font-size="42" font-weight="800" fill="#1f2328">${esc(NAME)}</text>
   ${headSvg}
   <text x="94" y="${300 + headLines.length * 92 + 10}" font-family="${FONT}" font-size="30" font-weight="500" fill="#57606a">${esc(DESC).slice(0, 46)}</text>
-  <text x="94" y="556" font-family="${FONT}" font-size="26" font-weight="700" fill="#2f6feb">${esc(HOST)}</text>
+  <text x="94" y="556" font-family="${FONT}" font-size="26" font-weight="700" fill="#0f766e">${esc(HOST)}</text>
 </svg>`;
 
 mkdirSync(resolve(root, "public/og"), { recursive: true });
